@@ -8,7 +8,6 @@ const DeletePostComponent = () => {
 	const handleDelete = async () => {
 	  try {
 		const response = await axios.delete('https://jsonplaceholder.typicode.com/posts/1');
-		console.log('삭제 성공:', response.data);
 	  } catch (error) {
 		console.error('삭제 실패:', error);
 	  }
